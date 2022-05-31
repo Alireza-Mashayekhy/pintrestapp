@@ -1,0 +1,141 @@
+.header{
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+}
+.headerRight{
+    width:170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pintrestIcon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.pintrestIcon img{
+    border-radius: 50px;
+}
+.pintrestIcon:hover{
+    background-color: #ebebeb;
+}
+.homeButton{
+    min-width: 80px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.allSearch{
+    display: flex;
+    flex-direction: column;
+    width: 81%;
+    margin-top: 500px;
+}
+.searchDiv{
+    display: flex;
+    width: 100%;
+    margin: 0px 10px;
+}
+.searchDiv div{
+    background-color: #ebebeb;
+    height: 50px;
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 30px 0px 0px 30px;
+}
+.searchDiv input{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 0px 30px 30px 0px;
+}
+.searches{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,100px);
+    grid-auto-rows: 100px;
+    height: 500px;
+    gap: 10px;
+    overflow: scroll;
+    background-color: white;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+.searches img{
+    cursor: pointer;
+}
+.alertIcon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.alertIcon:hover{
+    background-color: #ebebeb;
+}
+.messageIcon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.messageIcon:hover{
+    background-color: #ebebeb;
+}
+.profIcon span{
+    width: 25px;
+    height: 25px;
+    background-color: #9143a5;
+    border-radius: 50px;
+}
+.profIcon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.profIcon:hover{
+    background-color: #ebebeb;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.menu:hover{
+    background-color: #ebebeb;
+}

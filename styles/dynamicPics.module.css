@@ -1,0 +1,67 @@
+.fDiv{
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 700px;
+}
+.imgDiv{
+    grid-column: 1/4;
+    background-color: #e7e7e7;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 20px;
+}
+.leftArrow{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.leftArrow:hover{
+    background-color: #b4b4b4;
+}
+.myImg{
+    border-radius: 30px;
+}
+.twoArrow{
+    display: flex;
+    justify-content: flex-end;
+}
+.twoArrow div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50px;
+    cursor: pointer;
+}
+.twoArrow div:hover{
+    background-color: #b4b4b4;
+}
+.twoArrow2{
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+}
+.twoArrow2 div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50px;
+    cursor: pointer;
+}
+.twoArrow2 div:hover{
+    background-color: #b4b4b4;
+}
+.detailsDiv{
+    grid-column:4/6;
+    padding-left: 30px;
+    display: block;
+    background-color: white;
+}
