@@ -65,3 +65,18 @@
     display: block;
     background-color: white;
 }
+.showPic{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.showPic:hover{
+    background-color: white;
+    color: black;
+    border: solid black;
+}

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import dynamicPics from '../styles/dynamicPics.module.css'
 import { ForSearchClick } from '../pages/contexts/forSearchClick'
+import MyModal from './MyModal'
 
 export default function PhotoDetails({photo}) {
     const[bool, setBool] = useState(true)
@@ -38,6 +39,7 @@ export default function PhotoDetails({photo}) {
             <div className={dynamicPics.detailsDiv} style={{display: click2.imgDisplay}}>
                 <h2>{photo.id}</h2>
                 <h3>{photo.title}</h3>
+                <MyModal photoes={photo}/>
             </div>
         </div>
      );
