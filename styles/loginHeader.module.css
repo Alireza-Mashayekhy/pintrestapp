@@ -1,0 +1,120 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  width: 150px;
+}
+.headerLeft :nth-child(2) {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+}
+.headerRhite {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 430px;
+}
+.headerRhite {
+  font-weight: bold;
+}
+.Link {
+  cursor: pointer;
+}
+.Link:hover {
+  text-decoration: underline;
+}
+.LogButton {
+  background-color: rgb(230, 0, 0);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  margin-right: 10px;
+}
+.LogButton:hover {
+  background-color: rgb(187, 0, 0);
+}
+.SignButton {
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+}
+.LoginModal {
+  text-align: center;
+  border-radius: 30px;
+}
+.LoginModal p {
+  font-weight: bold;
+  font-size: 30px;
+}
+.LoginModal form {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-around;
+  align-items: center;
+}
+.LoginModal form input {
+  height: 50px;
+  width: 250px;
+  border-radius: 20px;
+  border: 2px solid #cccccc;
+  padding: 15px;
+}
+.LoginModal form button {
+  width: 250px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+}
+.LoginModal form div {
+  text-align: start;
+}
+.SignUpModal {
+  text-align: center;
+  border-radius: 30px;
+}
+.SignUpModal p {
+  font-weight: bold;
+  font-size: 30px;
+}
+.SignUpModal form {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-around;
+  align-items: center;
+}
+.SignUpModal form input {
+  height: 50px;
+  width: 250px;
+  border-radius: 20px;
+  border: 2px solid #cccccc;
+  padding: 15px;
+}
+.SignUpModal form button {
+  width: 250px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+}
+.SignUpModal form div {
+  text-align: start;
+}

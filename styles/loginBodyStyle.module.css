@@ -1,0 +1,59 @@
+.firstTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 200px;
+}
+.firstTop p {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.slideTitle {
+  height: 80px;
+  overflow: hidden;
+}
+.slideTitle div {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  transition: 500ms;
+}
+.slideDots {
+  width: 90px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slideshowDot {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: rgb(218, 218, 218);
+  border-radius: 50%;
+}
+.slidePics {
+  height: 620px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.slidecolumn {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.slidecolumn div {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: 500ms;
+}

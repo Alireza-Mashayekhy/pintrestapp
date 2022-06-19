@@ -12,6 +12,7 @@ export default function Header({ photoes }) {
 
   const handleSHowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
+  const userEmail = localStorage.getItem("email");
 
   return (
     <div className={headerStyle.header} onClick={closeSearch}>
@@ -46,6 +47,7 @@ export default function Header({ photoes }) {
           >
             <Modal.Body className={headerStyle.menuModalBody}>
               <p>Your accounts</p>
+              {/* <div>{userEmail}</div> */}
               <div>Add accounts</div>
               <div>Convert to business</div>
               <p className={headerStyle.moreOp}>More option</p>
