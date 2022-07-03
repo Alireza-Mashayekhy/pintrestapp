@@ -12,7 +12,6 @@ export default function Header({ photoes }) {
 
   const handleSHowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
-  const userEmail = localStorage.getItem("email");
 
   return (
     <div className={headerStyle.header} onClick={closeSearch}>

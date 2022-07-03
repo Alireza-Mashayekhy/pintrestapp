@@ -1,6 +1,7 @@
 import Head from "next/head";
-import LoginHeader from "../components/LoginHeader";
-import LoginBody from "../components/LoginBody";
+import MyBody from "../components/MyBody";
+import ShowLogInProvider from "./contexts/showLogIn";
+import ShowSignUpProvider from "./contexts/showSignUp";
 
 export default function Home() {
   return (
@@ -30,8 +31,11 @@ export default function Home() {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <LoginHeader />
-      <LoginBody />
+      <ShowSignUpProvider>
+        <ShowLogInProvider>
+          <MyBody />
+        </ShowLogInProvider>
+      </ShowSignUpProvider>
     </div>
   );
 }

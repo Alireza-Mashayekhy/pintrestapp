@@ -2,7 +2,7 @@ import loginBodyStyle from "../styles/loginBodyStyle.module.css";
 import { useEffect, useRef, useState } from "react";
 
 function LoginBody() {
-  const colors = ["red", "blue", "green", "black"];
+  const colors = ["rgb(194, 139, 0)", "rgb(97, 140, 123)", "blue", "green"];
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -26,18 +26,26 @@ function LoginBody() {
     };
   }, [index]);
   return (
-    <div>
-      <div>
+    <div style={{ overflow: "hidden", height: "84%" }}>
+      <div style={{ height: "100%" }}>
         <div className={loginBodyStyle.firstTop}>
           <p>Get your next</p>
           <div className={loginBodyStyle.slideTitle}>
             <div
               style={{
-                color: "red",
+                color: "rgb(194, 139, 0)",
                 transform: `translateY(${-index * 100}%)`,
               }}
             >
-              red
+              weeknight dinner idea
+            </div>
+            <div
+              style={{
+                color: "rgb(97, 140, 123)",
+                transform: `translateY(${-index * 100}%)`,
+              }}
+            >
+              home decor idea
             </div>
             <div
               style={{
@@ -45,18 +53,15 @@ function LoginBody() {
                 transform: `translateY(${-index * 100}%)`,
               }}
             >
-              blue
+              new look outfit
             </div>
             <div
               style={{
-                color: "green",
                 transform: `translateY(${-index * 100}%)`,
+                color: "green",
               }}
             >
-              green
-            </div>
-            <div style={{ transform: `translateY(${-index * 100}%)` }}>
-              black
+              green thumb idea
             </div>
             {colors.map((_, index) => (
               <div key={index}>{index}</div>
@@ -83,49 +88,51 @@ function LoginBody() {
           <div className={loginBodyStyle.slidecolumn}>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d1.jpg)",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d2.jpg)",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de1.jpg) no-repeat",
+                backgroundSize: "cover",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de2.jpg)",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n1.jpg) no-repeat",
+                backgroundSize: "cover",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n2.jpg)",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g1.jpg)",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g2.jpg)",
                 transform: `translateY(${-index * 210}%)`,
               }}
             ></div>
@@ -136,56 +143,56 @@ function LoginBody() {
           >
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d3.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d4.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de3.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de4.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n3.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n4.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g3.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g4.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "200ms",
               }}
@@ -197,56 +204,57 @@ function LoginBody() {
           >
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d5.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d6.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de5.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de6.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n5.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n6.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g5.jpg) no-repeat",
+                backgroundSize: "cover",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g6.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "400ms",
               }}
@@ -258,56 +266,56 @@ function LoginBody() {
           >
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d7.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d9.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de7.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de8.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n7.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n8.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g7.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g8.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "600ms",
               }}
@@ -319,56 +327,56 @@ function LoginBody() {
           >
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d8.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d10.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de9.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de10.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n9.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n10.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g9.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g10.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "800ms",
               }}
@@ -380,56 +388,58 @@ function LoginBody() {
           >
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d11.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d12.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de11.jpg) no-repeat",
+                backgroundSize: "cover",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de12.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n11.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n12.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g11.jpg) no-repeat",
+                backgroundSize: "cover",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g12.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1000ms",
               }}
@@ -438,56 +448,58 @@ function LoginBody() {
           <div className={loginBodyStyle.slidecolumn}>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d13.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "red",
+                background: "url(d14.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de13.jpg) no-repeat",
+                backgroundSize: "cover",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "blue",
+                background: "url(de14.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n13.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "green",
+                background: "url(n14.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g13.jpg) no-repeat",
+                backgroundSize: "cover",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}
             ></div>
             <div
               style={{
-                backgroundColor: "black",
+                background: "url(g14.jpg)",
                 transform: `translateY(${-index * 210}%)`,
                 transitionDelay: "1200ms",
               }}

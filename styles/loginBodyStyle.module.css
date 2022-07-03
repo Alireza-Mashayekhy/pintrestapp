@@ -37,12 +37,13 @@
   border-radius: 50%;
 }
 .slidePics {
-  height: 620px;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
   flex-wrap: wrap;
+  float: inline-end;
 }
 .slidecolumn {
   width: 14%;
@@ -56,4 +57,439 @@
   border-radius: 20px;
   margin-bottom: 20px;
   transition: 500ms;
+}
+.firstFooter {
+  background-color: rgb(255, 253, 146);
+  height: 7%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.firstFooter div {
+  display: flex;
+  font-weight: bold;
+}
+.SecPageBody {
+  background-color: rgb(255, 253, 146);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.secPageImages {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secPageImages > div {
+  height: 70%;
+  width: 80%;
+}
+.secPageImage1 {
+  z-index: 4;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  cursor: pointer;
+}
+.secPageImage2 {
+  z-index: 3;
+  position: absolute;
+  left: 27%;
+  cursor: pointer;
+}
+.secPageImage3 {
+  z-index: 2;
+  position: absolute;
+  left: 27%;
+  top: 50%;
+  cursor: pointer;
+}
+.secPageImage4 {
+  position: absolute;
+  left: 7%;
+  top: 30%;
+  cursor: pointer;
+}
+.textImage {
+  z-index: 5;
+  background-color: white;
+  width: 315px;
+  height: 100px;
+  border-radius: 50px;
+  color: rgb(110, 15, 60);
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  cursor: pointer;
+}
+.textImage div {
+  margin-left: 10px;
+}
+.secPageText {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secPageText :first-child {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(195, 25, 82);
+  text-align: center;
+}
+.secPageText :nth-child(2) {
+  font-size: 25px;
+  color: rgb(195, 25, 82);
+  text-align: center;
+}
+.secPageText button {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  background-color: rgb(195, 25, 82);
+  border: none;
+  border-radius: 30px;
+  color: rgb(255, 253, 146);
+  margin-top: 20px;
+}
+.thirdBody {
+  background-color: rgb(218, 255, 246);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.thirdBodyText {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.thirdBodyText :first-child {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(0, 107, 108);
+}
+.thirdBodyText :nth-child(2) {
+  font-size: 25px;
+  color: rgb(0, 107, 108);
+  text-align: center;
+  width: 50%;
+}
+.thirdBodyText button {
+  height: 50px;
+  width: 100px;
+  background: rgb(0, 107, 108);
+  color: rgb(204, 246, 238);
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.thirdBodyImg {
+  width: 830px;
+  height: 90%;
+  padding-top: 5%;
+}
+.thirdBodyFirstImg {
+  background-color: transparent;
+  background-image: url("../public/thirdPage1.png");
+  background-size: cover;
+  width: 400px;
+  height: 420px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  cursor: pointer;
+}
+.thirdBodyFirstImg :first-child {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+.thirdBodyFirstImges {
+  width: 80%;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+}
+.thirdBodyFirstImges :first-child {
+  background-color: transparent;
+  background-image: url("../public/thirdPage2.png");
+  background-size: cover;
+  width: 90px;
+  height: 130px;
+  border-radius: 30px;
+}
+.thirdBodyFirstImges :nth-child(2) {
+  background-color: transparent;
+  background-image: url("../public/thirdPage3.png");
+  background-size: cover;
+  width: 90px;
+  height: 130px;
+  border-radius: 30px;
+}
+.thirdBodyFirstImges :nth-child(3) {
+  background-color: transparent;
+  background-image: url("../public/thirdPage4.png");
+  background-size: cover;
+  width: 90px;
+  height: 130px;
+  border-radius: 30px;
+}
+.thirdBodySecImg {
+  width: 225px;
+  height: 235px;
+  background-color: transparent;
+  background: url("../public/thirdPage5.png") no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding-top: 80px;
+  padding-left: 20px;
+  position: relative;
+  left: 450px;
+  bottom: 420px;
+  cursor: pointer;
+}
+.thirdBodyThirdImg {
+  width: 165px;
+  height: 175px;
+  background-color: transparent;
+  background: url("../public/thirdPage6.png") no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 30px;
+  position: relative;
+  left: 430px;
+  bottom: 380px;
+  cursor: pointer;
+}
+.thirdBodyForthImg {
+  width: 225px;
+  height: 235px;
+  background-color: transparent;
+  background: url("../public/thirdPage7.png") no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 30px;
+  position: relative;
+  left: 180px;
+  bottom: 380px;
+  cursor: pointer;
+}
+.thirdBodyFifthImg {
+  width: 225px;
+  height: 235px;
+  background-color: transparent;
+  background: url("../public/thirdPage8.png") no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 30px;
+  position: relative;
+  left: 440px;
+  bottom: 580px;
+  cursor: pointer;
+}
+.forthPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.forthPagePic {
+  width: 50%;
+  height: 100%;
+  background-image: url("../public/forthLogPage1.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.forthPagePics {
+  width: 215px;
+  height: 430px;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+.forthPageFirstPic {
+  width: 215px;
+  height: 385px;
+  background-image: url("../public/forthLogPage2.png");
+  background-size: cover;
+  border-radius: 30px;
+}
+.forthPageSecPic {
+  width: 100px;
+  height: 100px;
+  background-image: url("../public/forthLogPage3.png");
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  bottom: 50px;
+  right: 50px;
+}
+.forthPagePicTitle {
+  width: 125px;
+  height: 40px;
+  color: white;
+  position: relative;
+  bottom: 100px;
+  left: 70px;
+}
+.forthPagePicTitle :first-child {
+  font-weight: bold;
+}
+.forthPageTexts {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 226, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forthPageText {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.forthPageText :first-child {
+  font-size: 60px;
+  color: rgb(195, 47, 0);
+  font-weight: bold;
+}
+.forthPageText :nth-child(2) {
+  font-size: 25px;
+  color: rgb(195, 47, 0);
+}
+.forthPageText button {
+  height: 50px;
+  width: 95px;
+  background: rgb(195, 47, 0);
+  color: rgb(255, 223, 233);
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.fifthLogPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: darkslategrey;
+}
+.fifthPageText {
+  width: 50%;
+  height: 100%;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifthPageText div {
+  width: 425px;
+  height: 285px;
+}
+.fifthPageRhite {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifthPageForm {
+  width: 485px;
+  height: 500px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fifthPageForm p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.fifthPageForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
+}
+.fifthPageForm input {
+  width: 270px;
+  height: 50px;
+  border: solid 2px #adadad;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.fifthPageForm input:focus {
+  outline: solid 4px #60ffff;
+}
+.fifthPageForm button {
+  width: 270px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.fifthLogPageFooter {
+  width: 100%;
+  height: 45px;
+  z-index: 2;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fifthLogPageFooter div {
+  margin-right: 10px;
 }
