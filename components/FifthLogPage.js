@@ -1,7 +1,10 @@
-import loginBodyStyle from "../styles/loginBodyStyle.module.css";
-import { useRef, useState } from "react";
-import SimpleReactValidator from "simple-react-validator";
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, onValue, set } from "firebase/database";
 import Image from "next/image";
+import SimpleReactValidator from "simple-react-validator";
+import { useRef, useState } from "react";
+import { useRouter } from "next/router";
+import loginBodyStyle from "../styles/loginBodyStyle.module.css";
 import Link from "next/link";
 
 function FifthLogPage() {
@@ -9,6 +12,8 @@ function FifthLogPage() {
   const [signUpPassword, setSignUpPassword] = useState("");
   const [signUpAge, setSignUpAge] = useState("");
   const [, forceUpdate] = useState();
+  const router = useRouter();
+
   const validator = useRef(
     new SimpleReactValidator({
       messages: {
@@ -24,8 +29,6 @@ function FifthLogPage() {
     setSignUpEmail("");
     setSignUpPassword("");
     setSignUpAge("");
-    setLoginPassword("");
-    setLoginEmail("");
   };
 
   const handleSubmitSignUp = (event) => {
@@ -35,19 +38,37 @@ function FifthLogPage() {
       signUpPassword,
       signUpAge,
     };
+    const firebaseConfig = {
+      databaseURL: "https://pinterest-5b417-default-rtdb.firebaseio.com",
+    };
+
     try {
       if (validator.current.allValid()) {
-        fetch("", {
-          method: "POST",
-          body: JSON.stringify(user),
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const userId = user.signUpEmail.split("@")[0];
+        const starCountRef = ref(database, "users/" + userId);
+        onValue(starCountRef, (snapshot) => {
+          const data = snapshot.val();
+          if (data !== null && data.email === user.email) {
+            alert("exist");
+          } else {
+            set(ref(database, "users/" + userId), {
+              username: userId,
+              email: user.signUpEmail,
+              password: user.signUpPassword,
+              Age: user.signUpAge,
+            });
+            reset();
+            router.push("/");
+          }
         });
-        reset();
       } else {
-        validator.current.showMessage();
+        validator.current.showMessages();
         forceUpdate(1);
       }
     } catch (ex) {
-      console.log(ex);
+      alert("error");
     }
   };
   return (
